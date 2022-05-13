@@ -1,0 +1,22 @@
+
+<app-nav></app-nav>
+<h1 >
+  2.-Quejas del area de Recaudacion Fiscal
+</h1>
+<div class="m-4">
+    <div style="display: block">
+      <canvas baseChart class="chart"
+              [datasets]="datosGrafico"
+              [labels]="lblDatos"
+              [options]="opcionesGrafico"
+              [legend]="mostrarLeyendasDeGrafico"
+              [chartType]="tipoDeGrafico"
+              (chartClick)="onClickGrafico($event)">
+            
+              
+              [colors]="coloresGrafico"
+
+            </canvas>
+    </div>
+    <button class="btn btn-primary mt-3" (click)="darValoresAleatorios()">Desordenar valores</button>
+  </div>
